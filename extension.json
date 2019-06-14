@@ -1,0 +1,27 @@
+{
+  "id": "build-circleci",
+  "name": "CircleCI - Build Manually",
+  "srcdoc": "./index.html",
+  "fieldTypes": ["Symbol"],
+  "sidebar": true,
+  "parameters": {
+    "instance": [
+      {
+        "id": "circleciBuildHookURL",
+        "type": "Symbol",
+        "name": "CircleCI Build Hook URL",
+        "description": "The CircleCI Build Hook URL that will be triggered once the user clicks on the build button.",
+        "required": true
+      },
+      {
+        "id": "access",
+        "type": "Enum",
+        "name": "Contentful user access",
+        "description": "Allow  triggering builds for all users or only for admins.",
+        "options": [{ "all": "All users" }, { "admins": "Admins only" }],
+        "required": true,
+        "default": "all"
+      }
+    ]
+  }
+}
