@@ -7,10 +7,10 @@
   "parameters": {
     "instance": [
       {
-        "id": "circleciBuildHookURL",
+        "id": "circleciApiToken",
         "type": "Symbol",
-        "name": "CircleCI Build Hook URL",
-        "description": "The CircleCI Build Hook URL that will be triggered once the user clicks on the build button.",
+        "name": "CircleCI User Access Token",
+        "description": "User Access token to build and fetch statuses from CircleCI",
         "required": true
       },
       {
